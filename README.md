@@ -10,9 +10,13 @@ We are working hard to create a culture of honor where questions big and small f
 * Where: Samaritan's Purse Training & Conference Center, 7691 Valley Blvd, Blowing Rock, NC 28605
 * What: Meetup introduction, using Stackblitz, building Chuck Norris Joke Generator
 
-## Meet-up Presentations
+## Presentations
+
+* [May 2018 (keynote)](https://github.com/ngHighCountry/meetup/blob/master/presentations/may-2018.key)
 
 ## Code Labs
+
+* [Chuck Norris Joke Generator](https://github.com/ngHighCountry/meetup/blob/master/labs/chuck-norris-jokes-lab.md)
 
 ## External Resources
 
