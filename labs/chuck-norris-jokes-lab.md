@@ -14,6 +14,8 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 * Delete `app/hello.component.ts`
 * Remove `HelloComponent` from `app/app.module.ts` `imports` and `import`
+* Delete this line from `app.component`
+	`... <hello name="{{ name }}"></hello>`
 
 ## Step 4
 
@@ -117,7 +119,7 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 ## Step 8
 
-* Export the Joke Card Item and Joke Card List Components from the `jokes.module`
+* Confirm the Joke Card Item and Joke Card List Components are being exported from the `jokes.module`
 
   ```
   @NgModule({
@@ -129,9 +131,6 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 * Add the Joke Card List to `app.component` html template:
   `... <app-joke-card-list></app-joke-card-list>`
-
-* Delete this line from `app.component`
-	`... <hello name="{{ name }}"></hello>`
 
 ## Step 9
 
