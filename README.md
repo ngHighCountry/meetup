@@ -13,7 +13,7 @@ We are working hard to create a culture of honor where questions big and small f
 
 ## Presentations
 
-* [May 2018 (keynote)](https://github.com/ngHighCountry/meetup/blob/master/presentations/may-2018.key)
+* [May 2018 (keynote)](https://github.com/ngHighCountry/meetup/blob/master/presentations/may-2018/may-2018.key)
 
 ## Code Labs
 
