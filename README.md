@@ -1,5 +1,5 @@
 # High Country Angular
-
+![]()
 High Country Angular is a group of tech enthusiasts, web designers, software developers and engineers, gathering together on a regular basis to share knowledge, ideas, and lessons learned in working with the Angular framework.
 
 We are working hard to create a culture of honor where questions big and small from beginners to experts are treated with the same respect.
