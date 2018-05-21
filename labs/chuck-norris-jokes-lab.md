@@ -17,9 +17,9 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 ## Step 4
 
-* Rename `styles.css` to `style.scss`
-* Update in `angular.json` all instances of `styles.css` to `style.scss`
-* Add the following to `style.scss`:
+* Rename `styles.css` to `styles.scss`
+* Update in `angular.json` all instances of `styles.css` to `styles.scss`
+* Add the following to `styles.scss`:
 
     ```
     @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
@@ -32,7 +32,10 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 ## Step 5
 
-* Create a `jokes` Module with the following contents:
+* Create a `jokes` Module
+* Create `joke-card-item` Component in `jokes` module
+* Create `joke-card-list` Component in `jokes` module
+* Copy/Paste the following code into `jokes` module
 
 	```
 	import { NgModule } from '@angular/core';
@@ -53,9 +56,6 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 	})
 	export class JokesModule { }
 	```
-
-* Create `joke-card-item` Component in `jokes` module
-* Create `joke-card-list` Component in `jokes` module
 
 ## Step 6
 
