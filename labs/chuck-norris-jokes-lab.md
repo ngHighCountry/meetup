@@ -178,7 +178,7 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
     	<div *ngIf="!(jokes$ | async)">
     	  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    	</div	
+    	</div>	
     	<div *ngIf="jokes$ | async as jokes">
     	  <div>
     	    <button mat-fab (click)="refreshJokes()">
@@ -190,6 +190,15 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
   ```
 
 ## Step 11
+
+* Add an input named `joke` of type `Joke` to the `joke-card-item.component.ts` as follows:
+
+  ```
+  ...
+  @Input() joke: Joke;
+  ...
+  constructor() {}
+  ```
 
 * Update `joke-card-item.component.html` with the following:
 
@@ -207,13 +216,4 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
     padding: 15px;
     margin: 15px;
   }
-  ```
-
-* Add an input named `joke` of type `Joke` to the `joke-card-item.component.ts` as follows:
-
-  ```
-  ...
-  @Input() joke: Joke;
-  ...
-  constructor() {}
   ```
