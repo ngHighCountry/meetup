@@ -6,6 +6,7 @@ We are working hard to create a culture of honor where questions big and small f
 
 ## Next Meet-up
 
+* Meetup Details => https://www.meetup.com/High-Country-Angular/events/250218758/
 * When: Monday, May 21st at 5:30pm - 7:30pm
 * Where: Samaritan's Purse Training & Conference Center, 7691 Valley Blvd, Blowing Rock, NC 28605
 * What: Meetup introduction, using Stackblitz, building Chuck Norris Joke Generator
@@ -21,10 +22,22 @@ We are working hard to create a culture of honor where questions big and small f
 ## External Resources
 
 * [Angular Documentation](https://angular.io/docs)
-* [Ultimate Angular](https://ultimateangular.com/)
 * [Ngx Tools](https://ngx.tools/#/search)
 * [Stackblitz](https://stackblitz.com/)
 
 ## Find Us on Twitter
 
 [@ngHighCountry](https://twitter.com/ngHighCountry)
+
+## Organizers
+
+* [Wes Grimes](https://twitter.com/wesgrimes) - Senior Application Developer/Team Lead @ Samaritan's Purse
+* [Chris Hampton](https://twitter.com/champton1122) - Senior Application Developer/Team Lead @ Samaritan's Purse
+
+## Special Thanks
+
+* [NG Conf](https://www.ng-conf.org/) - The largest Angular Conference in the world
+
+* [John Papa](https://johnpapa.net/) - Google Developer Expert and Microsoft Regional Director specializing in Web technologies.
+
+* [Dan Whalin](https://codewithdan.com/) - Google Developer Expert (GDE), Microsoft MVP and is also part of Microsoft's Regional Director, ASP Insiders and Docker Captains programs.
