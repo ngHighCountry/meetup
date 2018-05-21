@@ -14,12 +14,14 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 * Delete `app/hello.component.ts`
 * Remove `HelloComponent` from `app/app.module.ts` `imports` and `import`
+* Delete this line from `app.component`
+	`... <hello name="{{ name }}"></hello>`
 
 ## Step 4
 
-* Rename `styles.css` to `style.scss`
-* Update in `angular.json` all instances of `styles.css` to `style.scss`
-* Add the following to `style.scss`:
+* Rename `styles.css` to `styles.scss`
+* Update in `angular.json` all instances of `styles.css` to `styles.scss`
+* Add the following to `styles.scss`:
 
     ```
     @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
@@ -32,7 +34,10 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 ## Step 5
 
-* Create a `jokes` Module with the following contents:
+* Create a `jokes` Module
+* Create `joke-card-item` Component in `jokes` module
+* Create `joke-card-list` Component in `jokes` module
+* Copy/Paste the following code into `jokes` module
 
 	```
 	import { NgModule } from '@angular/core';
@@ -53,9 +58,6 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 	})
 	export class JokesModule { }
 	```
-
-* Create `joke-card-item` Component in `jokes` module
-* Create `joke-card-list` Component in `jokes` module
 
 ## Step 6
 
@@ -117,7 +119,7 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 ## Step 8
 
-* Export the Joke Card Item and Joke Card List Components from the `jokes.module`
+* Confirm the Joke Card Item and Joke Card List Components are being exported from the `jokes.module`
 
   ```
   @NgModule({
@@ -129,9 +131,6 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 * Add the Joke Card List to `app.component` html template:
   `... <app-joke-card-list></app-joke-card-list>`
-
-* Delete this line from `app.component`
-	`... <hello name="{{ name }}"></hello>`
 
 ## Step 9
 
@@ -179,7 +178,7 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
     	<div *ngIf="!(jokes$ | async)">
     	  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    	</div	
+    	</div>	
     	<div *ngIf="jokes$ | async as jokes">
     	  <div>
     	    <button mat-fab (click)="refreshJokes()">
@@ -191,6 +190,15 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
   ```
 
 ## Step 11
+
+* Add an input named `joke` of type `Joke` to the `joke-card-item.component.ts` as follows:
+
+  ```
+  ...
+  @Input() joke: Joke;
+  ...
+  constructor() {}
+  ```
 
 * Update `joke-card-item.component.html` with the following:
 
@@ -208,13 +216,4 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
     padding: 15px;
     margin: 15px;
   }
-  ```
-
-* Add an input named `joke` of type `Joke` to the `joke-card-item.component.ts` as follows:
-
-  ```
-  ...
-  @Input() joke: Joke;
-  ...
-  constructor() {}
   ```
