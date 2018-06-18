@@ -15,7 +15,7 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 * Delete `app/hello.component.ts`
 * Remove `HelloComponent` from `app/app.module.ts` `imports` and `import`
 * Delete this line from `app.component`
-	`... <hello name="{{ name }}"></hello>`
+  `... <hello name="{{ name }}"></hello>`
 
 ## Step 4
 
@@ -23,14 +23,14 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 * Update in `angular.json` all instances of `styles.css` to `styles.scss`
 * Add the following to `styles.scss`:
 
-    ```
-    @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
-    @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+  ```
+  @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+  @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-    * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    ```
+  * {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  ```
 
 ## Step 5
 
@@ -39,25 +39,25 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 * Create `joke-card-list` Component in `jokes` module
 * Copy/Paste the following code into `jokes` module
 
-	```
-	import { NgModule } from '@angular/core';
-	import { CommonModule } from '@angular/common';
-	import { MatCardModule, MatProgressBarModule, MatIconModule } from '@angular/material';
-	import { JokeCardItemComponent } from './joke-card-item/joke-card-item.component';
-	import { JokeCardListComponent } from './joke-card-list/joke-card-list.component';
-	
-	@NgModule({
-	  imports: [
-	    CommonModule,
-	    MatCardModule,
-	    MatProgressBarModule,
-	    MatIconModule
-	  ],
-	  declarations: [JokeCardItemComponent, JokeCardListComponent],
-	  exports: [JokeCardItemComponent, JokeCardListComponent ]
-	})
-	export class JokesModule { }
-	```
+      	```
+      	import { NgModule } from '@angular/core';
+      	import { CommonModule } from '@angular/common';
+      	import { MatCardModule, MatProgressBarModule, MatIconModule } from '@angular/material';
+      	import { JokeCardItemComponent } from './joke-card-item/joke-card-item.component';
+      	import { JokeCardListComponent } from './joke-card-list/joke-card-list.component';
+
+      	@NgModule({
+      	  imports: [
+      	    CommonModule,
+      	    MatCardModule,
+      	    MatProgressBarModule,
+      	    MatIconModule
+      	  ],
+      	  declarations: [JokeCardItemComponent, JokeCardListComponent],
+      	  exports: [JokeCardItemComponent, JokeCardListComponent ]
+      	})
+      	export class JokesModule { }
+      	```
 
 ## Step 6
 
@@ -103,7 +103,7 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
   @Injectable()
   export class JokeService {
     private API_BASE_URL = 'https://api.icndb.com';
-    constructor(private http: HttpClient) {} 
+    constructor(private http: HttpClient) {}
     getJokes(): Observable<Joke[]> {
       return this.http
         .get<JokeResult>(
@@ -136,49 +136,50 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 * Import `JokesModule` and `HttpClientModule` into `app.module`
 
-	```
-	import { JokesModule } from './jokes/jokes.module';
-	import { HttpClientModule } from '@angular/common/http';
+      	```
+      	import { JokesModule } from './jokes/jokes.module';
+      	import { HttpClientModule } from '@angular/common/http';
 
-	@NgModule({
-  imports:      [ BrowserModule, FormsModule, JokesModule, HttpClientModule ],
-	
-	```
+      	@NgModule({
+
+  imports: [ BrowserModule, FormsModule, JokesModule, HttpClientModule ],
+  ```
 
 ## Step 10
 
 * Replace `joke-card-list.component.ts` with the following:
 
   ```
-	import { Component, OnInit } from '@angular/core';
-	import { Observable } from 'rxjs';
-	import { Joke } from '../../models';
-	import { JokeService } from '../../services';
+  		import { Component, OnInit } from '@angular/core';
+  		import { Observable } from 'rxjs';
+  		import { Joke } from '../../models';
+  		import { JokeService } from '../../services';
 
-	@Component({
-	  selector: 'app-joke-card-list',
-	  templateUrl: './joke-card-list.component.html',
-	  styleUrls: ['./joke-card-list.component.css']
-	})
-	export class JokeCardListComponent implements OnInit {
-	  jokes$: Observable<Joke[]>;
-	  constructor(private jokeService: JokeService) {} 
-	  ngOnInit() {
-	    this.jokes$ = this.jokeService.getJokes();
-	  }
-	  refreshJokes() {
-	      this.jokes$ = this.jokeService.getJokes();
-	  }
-	}
+  		@Component({
+  		  selector: 'app-joke-card-list',
+  		  templateUrl: './joke-card-list.component.html',
+  		  styleUrls: ['./joke-card-list.component.css']
+  		})
+  		export class JokeCardListComponent implements OnInit {
+  		  jokes$: Observable<Joke[]>;
+  		  constructor(private jokeService: JokeService) {}
+  		  ngOnInit() {
+  		    this.jokes$ = this.jokeService.getJokes();
+  		  }
+  		  refreshJokes() {
+  		      this.jokes$ = this.jokeService.getJokes();
+  		  }
+  		}
   ```
 
 * Update `joke-card-list.component.html` with the following:
+
   ```html
   <h1>Chuck Norris Jokes</h1>
 
     	<div *ngIf="!(jokes$ | async)">
     	  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    	</div>	
+    	</div>
     	<div *ngIf="jokes$ | async as jokes">
     	  <div>
     	    <button mat-fab (click)="refreshJokes()">
@@ -191,13 +192,19 @@ Launch a new [Angular Stackblitz Project](https://stackblitz.com/fork/angular)
 
 ## Step 11
 
-* Add an input named `joke` of type `Joke` to the `joke-card-item.component.ts` as follows:
+* Import Joke model and Add an input named `joke` of type `Joke` to the `joke-card-item.component.ts` as follows:
 
   ```
+  import { Joke } from '../../models';
   ...
+  export class JokeCardItemComponent implements OnInit {
+
   @Input() joke: Joke;
-  ...
-  constructor() {}
+
+  constructor() { }
+
+  ngOnInit() {
+  }
   ```
 
 * Update `joke-card-item.component.html` with the following:
