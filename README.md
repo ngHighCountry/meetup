@@ -27,6 +27,9 @@ We are working hard to create a culture of honor where questions big and small f
 - [Ngx Tools](https://ngx.tools/#/search)
 - [Stackblitz](https://stackblitz.com/)
 
+## Free Online Courses
+- [Git Real](https://www.pluralsight.com/courses/code-school-git-real)
+
 ## Find Us on Twitter
 
 [@ngHighCountry](https://twitter.com/ngHighCountry)
