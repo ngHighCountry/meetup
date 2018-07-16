@@ -17,6 +17,8 @@ We are working hard to create a culture of honor where questions big and small f
 
 - [June 2018 (pdf)](https://github.com/ngHighCountry/meetup/blob/master/presentations/june-2018/ngHC-June2018-machine-setup.pdf)
 
+- [July 2018 (pdf)](https://github.com/ngHighCountry/meetup/blob/master/presentations/july-2018/july-2018.pdf)
+
 ## Code Labs
 
 - [Chuck Norris Joke Generator](https://github.com/ngHighCountry/meetup/blob/master/labs/chuck-norris-jokes-lab.md)
@@ -28,6 +30,7 @@ We are working hard to create a culture of honor where questions big and small f
 - [Stackblitz](https://stackblitz.com/)
 
 ## Free Online Courses
+
 - [Git Real](https://www.pluralsight.com/courses/code-school-git-real)
 
 ## Find Us on Twitter
