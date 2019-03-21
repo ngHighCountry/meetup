@@ -7,7 +7,7 @@ We are working hard to create a culture of honor where questions big and small f
 ## Next Meet-up
 
 - Meetup Details => https://www.meetup.com/High-Country-Angular/events/250218758/
-- When: Monday, July 16, 2018 from 5:30pm - 7:30pm
+- When: TBD
 - Where: Samaritan's Purse Training & Conference Center, 7691 Valley Blvd, Blowing Rock, NC 28605
 - What: TBA
 
@@ -18,6 +18,8 @@ We are working hard to create a culture of honor where questions big and small f
 - [June 2018 (pdf)](https://github.com/ngHighCountry/meetup/blob/master/presentations/june-2018/ngHC-June2018-machine-setup.pdf)
 
 - [July 2018 (pdf)](https://github.com/ngHighCountry/meetup/blob/master/presentations/july-2018/july-2018.pdf)
+
+- [August 2018 (pdf)](https://github.com/ngHighCountry/meetup/blob/master/presentations/aug-2018/aug-2018.pdf)
 
 ## Code Labs
 
