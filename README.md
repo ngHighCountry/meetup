@@ -7,7 +7,7 @@ We are working hard to create a culture of honor where questions big and small f
 ## Next Meet-up
 
 - Meetup Details => https://www.meetup.com/High-Country-Angular/events/250218758/
-- When: Monday, July 16, 2018 from 5:30pm - 7:30pm
+- When: TBD
 - Where: Samaritan's Purse Training & Conference Center, 7691 Valley Blvd, Blowing Rock, NC 28605
 - What: TBA
 
