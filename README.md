@@ -19,6 +19,8 @@ We are working hard to create a culture of honor where questions big and small f
 
 - [July 2018 (pdf)](https://github.com/ngHighCountry/meetup/blob/master/presentations/july-2018/july-2018.pdf)
 
+- [August 2018 (pdf)](https://github.com/ngHighCountry/meetup/blob/master/presentations/aug-2018/aug-2018.pdf)
+
 ## Code Labs
 
 - [Chuck Norris Joke Generator](https://github.com/ngHighCountry/meetup/blob/master/labs/chuck-norris-jokes-lab.md)
