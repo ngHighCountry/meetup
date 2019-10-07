@@ -2,7 +2,7 @@
 
 ## Step 1
 
-```ng new chuck-norris-joke-generator
+```ng new chuck-norris-joke-generator```
 
 - Add routing when asked
 - Use SCSS when asked
